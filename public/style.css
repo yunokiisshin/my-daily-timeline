@@ -1,0 +1,379 @@
+/* FILEPATH: /Users/yunokiisshin/Desktop/CS/my-daily-timeline/public/style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arimo', sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    margin: auto;
+}
+
+.container {
+    background-color: #adadad;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.main-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+    align-items: center;
+    gap: 10px;
+}
+
+.todo-list-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-content: center;
+    flex-grow: 2;
+    gap: 10px;
+    padding: 20px;
+    max-width: 100%;
+}
+
+.todo-item {
+    align-items: center;
+    background-color: #fbeee0;
+    border: 2px solid #422800;
+    border-radius: none;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 3;
+    gap: 10px;
+    padding: 20px;
+}
+
+
+.timer {
+    width: 550px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 20px;
+    gap: 20px;
+}
+
+.timer * {
+    cursor: default;
+}
+
+.timer h3 {
+    width: 100%;
+    font-size: 26px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.timer--clock {
+    width: 100%;
+    position: relative;
+    padding-left: 6px;
+}
+
+.timer--clock .clock-display-grp {
+    width: 100%;
+    position: relative;
+}
+
+.timer--clock .number-grp {
+    width: auto;
+    display: block;
+    height: 156px;
+    float: left;
+    overflow: hidden;
+}
+
+.timer--clock .number-grp-wrp {
+    width: 100%;
+    position: relative;
+}
+
+.timer--clock .number-grp-wrp .num {
+    width: 100%;
+    position: relative;
+    height: 156px;
+}
+
+.timer--clock .number-grp-wrp .num p {
+    width: auto;
+    display: table;
+    font-size: 205px;
+    line-height: 150px;
+    font-weight: bold;
+}
+
+.timer--clock .clock-separator {
+    width: auto;
+    float: left;
+    display: block;
+    height: 156px;
+}
+
+.timer--clock .clock-separator p {
+    width: auto;
+    display: table;
+    font-size: 205px;
+    line-height: 150px;
+    font-weight: bold;
+}
+
+.timer h4 {
+    width: 100%;
+    font-size: 20px;
+    letter-spacing: 6px;
+    text-align: center;
+    margin: 20px;
+    float: left;
+}
+
+.timer-display-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.timer-display-controls button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.timer-display-controls button:hover {
+    background-color: #d0d0d0;
+}
+
+.timer-display-controls button:active {
+    background-color: #b0b0b0;
+}
+
+
+
+
+
+
+
+.timer-option-container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    flex-grow: 2;
+    gap: 30px;
+    padding: 20px;
+}
+
+.timer-option {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    background-color: #fbeee0;
+    border: 2px solid #422800;
+    border-radius: none;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.timer-option:hover {
+    background-color: #fff;
+}
+
+.timer-option:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+}
+
+/* Additional styles for the HTML structure provided */
+
+.header {
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.auth-buttons button {
+    margin-left: 10px;
+}
+
+.reload {
+    width: 125px;
+    height: 14px;
+    position: absolute;
+    bottom: 50vh;
+    left: 50%;
+    margin-left: -(125px / 2);
+    opacity: 0;
+    display: none;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.reload:hover svg path {
+    fill: darken(white, 60%);
+}
+
+.reload:hover p {
+    color: darken(white, 60%);
+}
+
+.reload svg {
+    width: 12px;
+    height: 12px;
+    float: left;
+    margin-right: 10px;
+}
+
+.reload p {
+    color: #2b2b2b;
+    font-size: 12px;
+    float: left;
+    line-height: 11px;
+}
+
+.progress-bar {
+    background-color: #f0f0f0;
+    border-radius: 25px;
+    height: 10px;
+    width: 100%;
+    margin: 20px;
+}
+
+.progress-bar-fill {
+    background-color: #000;
+    height: 100%;
+    width: 0;
+}
+
+
+.add-timer-option {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    gap: 10px;
+}
+
+.add-timer {
+    display: flex;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #84fffb;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.add-timer {
+    background-color: #fbeee0;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.add-timer:hover {
+    background-color: #fff;
+}
+
+.add-timer:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+    .add-timer {
+        min-width: 120px;
+        padding: 0 25px;
+    }
+}
