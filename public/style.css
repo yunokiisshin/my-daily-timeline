@@ -23,7 +23,7 @@ body, html {
 }
 
 .container {
-    background-color: #adadad;
+    background-color: #c1c1c1;
     width: 100%;
     height: 100%;
     display: flex;
@@ -49,13 +49,14 @@ body, html {
 
 /* todo-list to the left */
 .todo-list-container {
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+    flex-direction: column;
     align-content: center;
+    align-items: stretch;
     flex-grow: 2;
-    gap: 10px;
+    gap: 30px;
     padding: 20px;
-    max-width: 100%;
+    max-width: 280px;
 }
 
 .todo-item {
@@ -75,6 +76,8 @@ body, html {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    padding: 0 18px;
+    max-width: 200px;
 }
 
 
@@ -144,13 +147,19 @@ body, html {
 
 .timer--clock {
     width: 100%;
-    position: relative;
     padding-left: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .timer--clock .clock-display-grp {
     width: 100%;
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .timer--clock .number-grp {
@@ -175,7 +184,7 @@ body, html {
 .timer--clock .number-grp-wrp .num p {
     width: auto;
     display: table;
-    font-size: 205px;
+    font-size: 140px;
     line-height: 150px;
     font-weight: bold;
 }
@@ -190,7 +199,7 @@ body, html {
 .timer--clock .clock-separator p {
     width: auto;
     display: table;
-    font-size: 205px;
+    font-size: 140px;
     line-height: 150px;
     font-weight: bold;
     text-align: center;
@@ -266,6 +275,7 @@ body, html {
     flex-grow: 2;
     gap: 30px;
     padding: 20px;
+    max-width: 100%;
 }
 
 .timer-option {
